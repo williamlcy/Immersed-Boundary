@@ -1,6 +1,6 @@
 # **IBFoam**
 # **Description**
-IBFoam is a simple **fluid-structure interaction** library that combines the **immersed boundary method** with the **Piso algorithm**.
+IBFoam is a simple **fluid-structure interaction** library based on OpenFOAM that combines the **immersed boundary method** with the **Piso algorithm**.
 The implementation of the immersed boundary method is based on [1].    
 
 Since the development is not yet completed, only the work related to the immersed boundary method (2 dimensions) is uploaded. The follow-up work includes:
