@@ -1,0 +1,10 @@
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I"/usr/lib/x86_64-linux-gnu/openmpi/include" \
+    -I"/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"  \
+    -I$(LIB_SRC)/meshTools/lnInclude
+
+EXE_LIBS = \
+    -lfiniteVolume \
+    -L/usr/lib/x86_64-linux-gnu/openmpi/lib -lmpi_cxx -lmpi \
+    -lmeshTools

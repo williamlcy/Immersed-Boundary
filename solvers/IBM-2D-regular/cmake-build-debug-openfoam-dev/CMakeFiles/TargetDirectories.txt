@@ -1,0 +1,3 @@
+/home/william/OpenFOAM/william-v2312/20240403_IBM/solver/IBM-2D-regular/cmake-build-debug-openfoam-dev/CMakeFiles/IBFoam.dir
+/home/william/OpenFOAM/william-v2312/20240403_IBM/solver/IBM-2D-regular/cmake-build-debug-openfoam-dev/CMakeFiles/edit_cache.dir
+/home/william/OpenFOAM/william-v2312/20240403_IBM/solver/IBM-2D-regular/cmake-build-debug-openfoam-dev/CMakeFiles/rebuild_cache.dir

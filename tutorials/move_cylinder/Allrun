@@ -1,0 +1,21 @@
+#!/bin/sh
+cd "${0%/*}" || exit                                # Run from this directory
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions        # Tutorial run functions
+#------------------------------------------------------------------------------
+# Get application name
+application="IB2DFoam"
+
+\gmsh ibmcylind_fluid.geo -3 -o ibmcylind_fluid.msh
+\gmshToFoam ibmcylind_fluid.msh
+
+\changeDictionary -constant
+
+
+\rm -rf 0
+restore0Dir
+
+#runApplication potentialFoam
+#runApplication writeIbMasks
+#runApplication $application
+decomposePar
+runParallel $application
