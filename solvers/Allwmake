@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -o nounset
+set -o errexit
+
+wclean all 
+
+IBFoam=`pwd`
+
+cd $IBFoam/IBM-2D-regular
+wmake
+
+cd $IBFoam/IBM-Solver
+wmake
+
+
+
